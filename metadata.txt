@@ -1,23 +1,20 @@
 [general]
-name=plugin
+name=LatLon
 qgisMinimumVersion=3.00
 email=jmillsapengineer@gmail.com
 author=John Millsap
-description=description
-about=long description
-version=0.1
-repository=repo
+description=Shows Lat/Lon on canvas
+about=displays Lat/Lon in WGS84, regardless of project CRS. Clicking copies coordinates to system clipboard.
+version=1.0
+repository=https://github.com/millsapjohn/qgis_latlon
 
-category=RasterVectorDatabaseMeshWeb
 changelog=changelog
-experimental=True
+experimental=False
 deprecated=False
-tags=tag,tag1
-homepage=homepage
-tracker=tracker
+homepage=https://github.com/millsapjohn/qgis_latlon
+tracker=https://github.com/millsapjohn/qgis_latlon/tracker
 qgisMaximumVersion=3.99
-icon=icon
-plugin_dependencies=plugin1,plugin2
+icon=':/images/themes/default/mActionFindReplace.svg'
 server=False
 hasProcessingProvider=False
 
