@@ -14,9 +14,9 @@ from qgis.gui import (
 )
 from qgis.utils import iface
 try:
-    from qgis.PyQt.QtWidgets import QAction
-except ImportError:
     from qgis.PyQt.QtGui import QAction
+except ImportError:
+    from qgis.PyQt.QtWidgets import QAction
 from qgis.PyQt.QtWidgets import (
     QLineEdit,
 )
@@ -78,7 +78,7 @@ class LatLonMapTool(QgsMapToolEmitPoint):
 
     def activate(self):
         self.cursor = QCursor()
-        self.cursor.setShape(Qt.BlankCursor)
+        self.cursor.setShape(Qt.CursorShape.BlankCursor)
         self.setCursor(self.cursor)
         self.icon = QgsRubberBand(self.canvas)
         self.icon.setColor(QColor(0, 0, 0))
